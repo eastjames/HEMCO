@@ -404,6 +404,7 @@ CONTAINS
 
     ! Get option
     OptValue = HCO_GetOpt( HcoConfig%ExtList, OptName, ExtNr=ExtNr )
+    write(*,*)'OptName ', OptName ! JDE
     IF ( TRIM(OptValue) == TRIM(EMPTYOPT) ) THEN
        OptFound = .FALSE.
     ELSE
